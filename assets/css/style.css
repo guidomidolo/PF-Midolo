@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+.estilosIndex {
+    font-family: 'Poppins', sans-serif;
+}
+
+.estilosMain {
+    margin:20px;
+}
+
+.navbar{
+    width: 100%;
+    background-color: #222;
+    position: sticky;
+    top: 0;
+    align-content: center;
+    align-items: end;
+    z-index: 99999;
+}
+
+.navbar > ul {
+    list-style-type: none;
+}
+.navbar > ul > li {
+    display: inline-block;
+    position: relative;
+}
+.navbar > ul > li > a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.navbar> ul  > li > ul{
+    display: none;
+    top: 40px;
+    list-style-type: none;
+    background-color: #222;
+    left: 0;
+    position: absolute;
+    z-index: 3;
+    width:150px;
+    padding:10px;
+}
+.navbar > ul >li:hover ul{
+    display: block;
+}
+.navbar> ul  > li > ul a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+
+.bannerHome{
+    background-image: url(../img/pexels-adrien-olichon-2387793.jpg);
+    height:500px;
+    background-size:cover;
+    position:relative;
+    z-index:-1;
+}
+
+.bannerHome > h1{
+    color:#fff;
+    font-size:60px;
+    font-weight:700;
+    position:absolute;
+    top:27%;
+    left:10%;
+
+}
+.bannerHome > h2{
+    color:#fff;
+    font-size:20px;
+    position:absolute;
+    top: 45%;
+    left:10%;
+    letter-spacing: 5px;
+
+}
+.bannerHome > h3 {
+    color:#fff;
+    font-size:18px;
+    position:absolute;
+    left:10%;
+    top:55%;
+    font-weight:300;
+}
+
+.tituloCategoria {
+    display:inline-block;
+    margin-top:20px;
+    margin-bottom:20px;
+    position: absolute;
+    width:100%;
+}
+
+.tituloCategoria > h2 {
+    position:relative;
+    display:inline-block;
+    left:40%;
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+.categoriaDestacada1{
+    display:inline-block;
+    border-radius:30px;
+    border:1px dashed;
+    height:150px;
+    width:250px;
+    margin:60px 40px 60px 40px;
+    position:relative;
+    top:50px;
+    bottom:50px;
+}
+.categoriaDestacada1 > h2 {
+    position:absolute;
+    top:40%;
+    left:25%;
+}
+
+.productos {
+    display: inline-block;
+    margin-top:50px;
+}
+
+.producto {
+    border: 1px solid #222; 
+    padding: 20px;
+    margin: 20px; 
+    border-radius: 5px;
+    border-style: none;
+    display: inline-block;
+    width:300px;
+    overflow:hidden;
+    -webkit-box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.32); 
+    box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.08);
+}
+.categoria {
+    border: 1px solid #222; 
+    margin: 20px; 
+    border-radius: 5px;
+    border-style: none;
+    display: inline-block;
+    width:300px;
+    overflow:hidden;
+    -webkit-box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.32); 
+    box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.08);
+}
+
+.imagenProducto {
+    width:100%;
+}
+.tituloProducto {
+    font-size:25px;
+}
+.textoProducto{
+    line-height:25px;
+}
+.precioProducto{
+    font-size:25px;
+    color:#c10000;
+    font-weight:700;
+    margin-top: 10px
+}
+
+.agregarAlCarrito{
+    background-color:#000;
+    color:#fff;
+    font-size:15px;
+    padding:10px;
+    border-radius:5px;
+    border-color:#000;
+    margin-top:10px;
+    display:block;
+    width: 100%;
+    font-weight:700;
+}
+.agregarAlCarrito:hover {
+    background-color:#222;
+}
+
+/*
+.categoriaCompleta{
+    background-color:#000;
+    color:#fff;
+    font-size:15px;
+    padding:10px;
+    border-radius:5px;
+    border-color:#000;
+    margin-top:10px;
+    display:inline-block;
+    width: 1300px
+    font-weight:700;
+}
+.categoriaCompleta:hover {
+    background-color:#222;
+}*/
+
+.bannerPubli{
+    margin-top:50px;
+    width:1380px;
+    overflow:hidden;
+}
+
+.tituloMarcas {
+    display:inline-block;
+    margin-top:50px;
+    width:100%;
+}
+
+.tituloMarcas > h2 {
+    position:relative;
+    display:inline-block;
+    left:40%;
+    font-size:30px;
+}
+
+.marca1{
+    display:inline-block;
+    border-radius:30px;
+    border:1px dashed;
+    height:100px;
+    width:150px;
+    margin:50px 95px;
+    position:relative
+}
+.marca1 > h2 {
+    position:absolute;
+    top:35%;
+    left:20%;
+}
+
+footer{
+    background-color:#222;
+    color:#fff;
+}
+
+.columnaFooter{
+    display:inline-block;
+    border-color:solid 1px #000;
+    margin:50px;
+}
+
+.columnaFooter > ul {
+    list-style-type: none;
+}
+
+/*CSS PRODUCTO LOREM IPSUM DOLOR*/
+
+.bannerProducto{
+    background-image: url(../img/pexels-adrien-olichon-2387793.jpg);
+    height:200px;
+    background-size:cover;
+    position:relative;
+    z-index:-1;
+}
+
+.bannerProducto > h1{
+    color:#fff;
+    font-size:60px;
+    font-weight:700;
+    position:absolute;
+    top:17%;
+    left:10%;
+
+}
+
+.bannerProducto > h3 {
+    color:#fff;
+    font-size:18px;
+    position:absolute;
+    left:10%;
+    top:65%;
+    font-weight:300;
+}
+
+.tituloDestacados {
+    display:inline-block;
+    margin-top:50px;
+    width:100%;
+}
+
+.tituloDestacados > h2 {
+    position:relative;
+    display:inline-block;
+    left:30%;
+    font-size:30px;
+}
+
+.categoriaProducto {
+    border: 1px solid #222; 
+    margin: 20px; 
+    border-radius: 5px;
+    border-style: none;
+    display: inline-block;
+    width:700px;
+    height:600px;   
+    overflow:hidden;
+    -webkit-box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.32); 
+    box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.08);
+}
+
+.imagenProducto {
+    width:100%;
+}
+.tituloProducto {
+    font-size:25px;
+}
+.textoProducto{
+    line-height:25px;
+}
+.precioProducto{
+    font-size:25px;
+    color:#c10000;
+    font-weight:700;
+    margin-top: 10px
+}
+
+.infoProducto {
+    border: 1px solid #222; 
+    padding: 20px;
+    margin: 20px; 
+    border-radius: 5px;
+    border-style: none;
+    display: inline-block;
+    width:600px;
+    overflow:hidden;
+    position:absolute;
+}
+
+.infoProducto > h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.precioProductoPrincipal {
+    font-size:50px;
+    color:#c10000;
+    font-weight:700;
+    margin-top: 10px
+}
+
+/*CSS SHOP*/
+.filtrosLaterales{
+    width:300px;
+    padding: 20px;
+    margin: 20px; 
+    display: inline-block;
+    top:0;
+}
+
+.filtrosLaterales > h2 {
+    margin-top:30px;
+}
+.filtrosLaterales > ul {
+    margin-left:20px;
+    line-height:40px;
+    list-style-type: none;
+} 
+
+.productoVacio {
+    border: 1px solid #222; 
+    padding: 20px;
+    margin: 20px; 
+    border-radius: 5px;
+    border-style: none;
+    display: inline-block;
+    width:300px;
+    overflow:hidden;
+}
+.pagination{
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:50px;
+}
+
+.productosShop {
+    border: 1px solid #222; 
+    padding: 20px;
+    margin: 20px; 
+    border-radius: 5px;
+    border-style: none;
+    display: inline-block;
+    width:300px;
+    overflow:hidden;
+    -webkit-box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.32); 
+    box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.08);
+}
+
+
+/*CSS NOSOTROS*/
+
+.imgNosotros {
+    width:800px;
+    display:inline-block;
+    max-height:500px;
+    overflow:hidden;
+}
+
+.galeria{
+    display:inline-block;
+}
+
+.galeria {
+    padding: 20px;
+    margin: 20px; 
+    border-radius: 5px;
+    border-style: none;
+    display: inline-block;
+    width:300px;
+    overflow:hidden;
+    -webkit-box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.32); 
+    box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.08);
+}
+
+.tituloRelacionados {
+    display:inline-block;
+    margin-top:50px;
+    width:100%;
+}
+
+.tituloRelacionados > h2 {
+    position:relative;
+    display:inline-block;
+    left:40%;
+    font-size:30px;
+}
+
+/*CSS CONTACTO*/
+.contacto{
+    display:block;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.infoContacto{
+    margin:20px;
+    width:650px;
+    display:inline-block;
+    margin-right:20px;
+    
+}
+.infoContacto > h2 {
+    margin-bottom:30px;
+}
+.formContacto{
+    width:650px;
+    display:inline-block;
+    margin:20px 20px 80px 20px;
+}
+
+.datosContacto{
+    margin:20px;
+}
+
+.enviarMensaje{
+    background-color:#000;
+    color:#fff;
+    font-size:15px;
+    padding:10px;
+    border-radius:5px;
+    border-color:#000;
+    margin-top:10px;
+    display:block;
+    width: 620px;
+    font-weight:700;
+}
+.enviarMensaje:hover {
+    background-color:#222;
+}
+
+.casilleros {
+    width:300px;
+    border:none;
+    border-bottom:1px solid #222;
+    margin:5px;
+}
+.textarea {
+    border:1px solid #222;
+}
