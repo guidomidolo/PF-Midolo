@@ -29,7 +29,7 @@ nav{
 
 nav > img {
     width: auto;
-    height: 64px;
+    height: 80px;
     object-fit: cover;
     grid-column: 1/1;
     justify-self: center;
@@ -316,6 +316,9 @@ footer{
     align-items: center;
 }
 
+.columnaFooter > img {
+    justify-content:center;
+}
 
 .columnaFooter > ul {
     list-style-type: none;
