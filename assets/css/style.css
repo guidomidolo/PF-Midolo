@@ -328,10 +328,11 @@ footer{
 
 .bannerProducto{
     background-image: url(../img/pexels-adrien-olichon-2387793.jpg);
-    height:200px;
+    height:300px;
     background-size:cover;
     position:relative;
     z-index:-1;
+    width:100%;
 }
 
 .bannerProducto > h1{
@@ -339,7 +340,7 @@ footer{
     font-size:60px;
     font-weight:700;
     position:absolute;
-    top:17%;
+    top:22%;
     left:10%;
 
 }
@@ -349,7 +350,7 @@ footer{
     font-size:18px;
     position:absolute;
     left:10%;
-    top:65%;
+    top:55%;
     font-weight:300;
 }
 
@@ -366,6 +367,16 @@ footer{
     font-size:30px;
 }
 
+.productosDestacados {
+    display:flex;
+    flex-wrap: wrap;    
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:50px;
+    margin-bottom:100px;  
+    gap:10px;  
+}
+
 .categoriaProducto {
     border: 1px solid #222; 
     margin: 20px; 
@@ -377,6 +388,10 @@ footer{
     overflow:hidden;
     -webkit-box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.32); 
     box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.08);
+}
+
+.productoIndividual{
+    gap:40px;
 }
 
 .imagenProducto {
@@ -555,4 +570,57 @@ footer{
 }
 .textarea {
     border:1px solid #222;
+}
+
+
+
+
+.productoIndividual {
+    display:flex;
+    flex-direction:row;
+    gap:30px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.imagenProductoIndividual {
+    width:100%;
+    object-fit: contain;
+}
+.tituloProductoIndividual {
+    font-size:25px;
+}
+.textoProductoIndividual{
+    line-height:25px;
+}
+.precioProductoIndividual {
+    font-size:25px;
+    color:#c10000;
+    font-weight:700;
+    margin-top: 10px
+}
+
+.infoProductoIndividual{
+    display:flex;
+    flex-direction: column;
+    border: 1px solid #222; 
+    padding: 20px;
+    margin: 20px; 
+    border-radius: 5px;
+    border-style: none;
+    width:50%;
+    height:auto;
+    justify-content:space-evenly
+}
+
+.infoProductoIndividual > h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.precioProductoPrincipalIndividual {
+    font-size:50px;
+    color:#c10000;
+    font-weight:700;
+    margin-top: 10px
 }
