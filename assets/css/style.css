@@ -8,7 +8,7 @@
     font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 80px 550px auto 200px;
+    grid-template-rows: 80px auto auto 200px;
     grid-template-areas: "nav    nav    nav    nav"
                          "header header header header"
                          "main   main   main   main"
@@ -124,7 +124,7 @@ main {
 .tituloCategoria {
     display:flex;
     flex-direction: row;
-    margin-top:20px;
+    margin-top:100px;
     margin-bottom:20px;
     justify-content: center;
 }
@@ -316,6 +316,13 @@ footer{
     align-items: center;
 }
 
+@media (max-width:500px){
+    footer{
+        flex-direction: column;
+        width:100%;
+    }
+}
+
 .columnaFooter > img {
     justify-content:center;
 }
@@ -326,16 +333,16 @@ footer{
 
 /*CSS PRODUCTO LOREM IPSUM DOLOR*/
 
-.bannerProducto{
-    background-image: url(../img/pexels-adrien-olichon-2387793.jpg);
+.bannerProductoIndividual{
+    background-image: url(../img/bannerProductoVans.jpg);
     height:300px;
     background-size:cover;
     position:relative;
     z-index:-1;
-    width:100%;
+    background-position: left;
 }
 
-.bannerProducto > h1{
+.bannerProductoIndividual > h1{
     color:#fff;
     font-size:60px;
     font-weight:700;
@@ -345,7 +352,7 @@ footer{
 
 }
 
-.bannerProducto > h3 {
+.bannerProductoIndividual > h3 {
     color:#fff;
     font-size:18px;
     position:absolute;
@@ -355,15 +362,13 @@ footer{
 }
 
 .tituloDestacados {
-    display:inline-block;
-    margin-top:50px;
-    width:100%;
+    margin-top:100px;
 }
 
 .tituloDestacados > h2 {
-    position:relative;
-    display:inline-block;
-    left:30%;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
     font-size:30px;
 }
 
@@ -390,8 +395,25 @@ footer{
     box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.08);
 }
 
-.productoIndividual{
-    gap:40px;
+.categoriaProductoIndividual {
+    border: 1px solid #222; 
+    margin: 20px; 
+    border-radius: 5px;
+    border-style: none;
+    display: flex;
+    width:50%;
+    height: auto;
+    overflow:hidden;
+    -webkit-box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.32); 
+    box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.08);
+}
+
+@media (max-width:500px){
+    .categoriaProductoIndividual {
+        display: flex;
+        width:100%;
+    }
+    
 }
 
 .imagenProducto {
@@ -578,14 +600,21 @@ footer{
 .productoIndividual {
     display:flex;
     flex-direction:row;
-    gap:30px;
+    gap:50px;
     padding-left:20px;
     padding-right:20px;
+    margin-top:50px;
+}
+
+@media(max-width:500px){
+    .productoIndividual {
+        flex-direction:column;
+        flex-wrap: wrap;
+    }
 }
 
 .imagenProductoIndividual {
     width:100%;
-    object-fit: contain;
 }
 .tituloProductoIndividual {
     font-size:25px;
@@ -611,6 +640,13 @@ footer{
     width:50%;
     height:auto;
     justify-content:space-evenly
+}
+
+@media (max-width: 500px){
+    .infoProductoIndividual{
+        width:100%;
+
+    }
 }
 
 .infoProductoIndividual > h2{
