@@ -8,7 +8,7 @@
     font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 80px auto auto 200px;
+    grid-template-rows: 80px auto auto 200gitpx;
     grid-template-areas: "nav    nav    nav    nav"
                          "header header header header"
                          "main   main   main   main"
@@ -170,20 +170,80 @@ main {
 
 .categoriaDestacada1{
     border-radius:30px;
-    border:1px solid;
     height:150px;
     width:250px;
     position:relative;
     top:50px;
     bottom:50px;
     background-image:url(../img/panchas.jpg);
+    background-position: bottom;
+    background-size: cover;
 
 }
+.categoriaDestacada2{
+    border-radius:30px;
+    height:150px;
+    width:250px;
+    position:relative;
+    top:50px;
+    bottom:50px;
+    background-image:url(../img/joggers.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.categoriaDestacada3{
+    border-radius:30px;
+    border:none;
+    height:150px;
+    width:250px;
+    position:relative;
+    top:50px;
+    bottom:50px;
+    background-image:url(../img/hoodies.jpg);
+    background-position: bottom;
+    background-size: cover;
+
+}
+.categoriaDestacada4{
+    border-radius:30px;
+    border:none;
+    height:150px;
+    width:250px;
+    position:relative;
+    top:50px;
+    bottom:50px;
+    background-image:url(../img/anoraks.jpg);
+    background-position: bottom;
+    background-size: cover;
+
+}
+
 .categoriaDestacada1 > h2 {
     position:absolute;
     top:40%;
     left:25%;
     color:#fff;
+}
+
+.categoriaDestacada2 > h2 {
+    position:absolute;
+    top:40%;
+    left:25%;
+    color:#fff;
+}
+.categoriaDestacada3 > h2 {
+    position:absolute;
+    top:40%;
+    left:25%;
+    color:#fff;
+}
+.categoriaDestacada4 > h2 {
+    position:absolute;
+    top:40%;
+    left:25%;
+    color:#fff;
+ 
 }
 
 .productos {
@@ -342,7 +402,34 @@ footer{
     background-position: left;
 }
 
+.bannerProductoIndividualVolcom{
+    background-image: url(../img/bannerVolcom.jpg);
+    height:300px;
+    background-size:cover;
+    position:relative;
+    z-index:-1;
+    background-position: left;   
+}
+
+
 .bannerProductoIndividual > h1{
+    color:#fff;
+    font-size:60px;
+    font-weight:700;
+    position:absolute;
+    top:22%;
+    left:10%;
+}
+
+@media (max-width:500px) {
+    .bannerProductoIndividual > h1 {
+        font-size: 45px;
+        top: 30%;
+        left: 10%;
+      }
+}
+
+.bannerProductoIndividualVolcom > h1{
     color:#fff;
     font-size:60px;
     font-weight:700;
@@ -352,7 +439,25 @@ footer{
 
 }
 
+@media (max-width:500px) {
+    .bannerProductoIndividualVolcom > h1 {
+        font-size: 45px;
+        top: 30%;
+        left: 10%;
+      }
+}
+
+
 .bannerProductoIndividual > h3 {
+    color:#fff;
+    font-size:18px;
+    position:absolute;
+    left:10%;
+    top:55%;
+    font-weight:300;
+}
+
+.bannerProductoIndividualVolcom > h3 {
     color:#fff;
     font-size:18px;
     position:absolute;
