@@ -682,7 +682,7 @@ footer{
     border-color:#000;
     margin-top:10px;
     display:block;
-    width: 620px;
+    width: 100%;
     font-weight:700;
 }
 .enviarMensaje:hover {
