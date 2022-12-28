@@ -690,13 +690,16 @@ footer{
 }
 
 .casilleros {
-    width:300px;
+    width:100%;
     border:none;
     border-bottom:1px solid #222;
     margin:5px;
+    margin-bottom:10px;
 }
 .textarea {
     border:1px solid #222;
+    max-width:100vw !important;
+    width:auto;
 }
 
 
@@ -800,3 +803,20 @@ footer{
     font-size:20px;
     font-weight:800;
 }
+
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  background-color: #222222;
+}
+
+}
+
+.dropdown-item {
+    color: #fff;
+  }
+
+  .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+    color: white;
+  }
+
+ 
