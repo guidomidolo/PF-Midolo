@@ -1,0 +1,40 @@
+%categoriaDestacada {
+    border-radius:30px;
+    border:none;
+    height:150px;
+    width:250px;
+    position:relative;
+    top:50px;
+    bottom:50px;
+    background-position: bottom;
+    background-size: cover;
+}
+
+%bannerProductoIndividual {
+    height:300px;
+    background-size:cover;
+    position:relative;
+    z-index:-1;
+    background-position: left;
+    > h1{
+        color:#fff;
+        font-size:60px;
+        font-weight:700;
+        position:absolute;
+        top:22%;
+        left:10%;
+        @media (max-width:500px) {
+                font-size: 45px;
+                top: 30%;
+                left: 10%;
+              }
+    }
+    > h3 {
+        color:#fff;
+        font-size:18px;
+        position:absolute;
+        left:10%;
+        top:55%;
+        font-weight:300;
+    }
+}

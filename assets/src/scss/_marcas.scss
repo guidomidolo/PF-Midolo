@@ -1,0 +1,22 @@
+.marcas {
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    gap:20px;
+    justify-content: space-around;
+    margin-top:50px;
+    margin-bottom:100px;
+    > img {
+        height:100px;
+    }
+}
+
+.tituloMarcas {
+    margin-top:50px;
+    width:100%;
+    text-align:center;
+    h2 {
+        font-size:30px;
+    }
+    
+}

@@ -1,0 +1,25 @@
+footer{
+    display: flex;
+    grid-area: footer;
+    background-color:#222;
+    color:#fff;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: space-evenly;
+    align-items: center;
+    @media (max-width:500px){
+            flex-direction: column;
+            width:100%;
+        }
+}
+
+.columnaFooter {
+    > img {
+        justify-content:center;
+    }
+    > ul {
+        list-style-type: none;
+    }
+}
+

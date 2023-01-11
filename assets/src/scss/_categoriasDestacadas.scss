@@ -1,0 +1,65 @@
+.tituloCategoria {
+    display:flex;
+    flex-direction: row;
+    margin-top:100px;
+    margin-bottom:20px;
+    justify-content: center;
+    > h2 {
+        position:relative;
+        margin-bottom:20px;
+        font-size:30px;
+    }
+}
+
+.categoriasDestacadas {
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-around;
+}
+
+.categoriaDestacada1{
+    @extend %categoriaDestacada;
+    background-image:url(../img/panchas.jpg);
+    > h2{
+        position:absolute;
+        top:40%;
+        left:25%;
+        color:#fff;
+    }
+
+}
+.categoriaDestacada2{
+    @extend %categoriaDestacada;
+    background-image:url(../img/joggers.jpg);
+    > h2{
+        position:absolute;
+        top:40%;
+        left:25%;
+        color:#fff;
+    }
+}
+
+.categoriaDestacada3{
+    @extend %categoriaDestacada;
+    background-image:url(../img/hoodies.jpg);
+    > h2 {
+        position:absolute;
+        top:40%;
+        left:25%;
+        color:#fff;
+    }
+
+
+}
+.categoriaDestacada4{
+    @extend %categoriaDestacada;
+    background-image:url(../img/anoraks.jpg);
+    > h2 {
+        position:absolute;
+        top:40%;
+        left:25%;
+        color:#fff;
+    }
+
+}

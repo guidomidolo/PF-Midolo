@@ -1,0 +1,12 @@
+.tituloCategoria {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.tituloCategoria > h2 {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 30px;
+}

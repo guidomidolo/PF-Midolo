@@ -1,0 +1,49 @@
+.producto {
+    border: 1px solid #222; 
+    padding: 20px;
+    margin: 20px; 
+    border-radius: 5px;
+    border-style: none;
+    width:300px;
+    overflow:hidden;
+    -webkit-box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.32); 
+    box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.08);
+    transition:0.3s;
+    &:hover {
+        -webkit-box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.90); 
+        box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.25);
+        transition:0.6s;
+    }
+}
+
+.imagenProducto {
+    width:100%;
+}
+.tituloProducto {
+    font-size:25px;
+}
+.textoProducto{
+    line-height:25px;
+}
+.precioProducto{
+    font-size:25px;
+    color:$colorPrecio;
+    font-weight:700;
+    margin-top: 10px
+}
+
+.agregarAlCarrito{
+    background-color:#000;
+    color:#fff;
+    font-size:15px;
+    padding:10px;
+    border-radius:5px;
+    border-color:#000;
+    margin-top:10px;
+    display:block;
+    width: 100%;
+    font-weight:700;
+    &:hover {
+        background-color:#222;
+    }
+}
