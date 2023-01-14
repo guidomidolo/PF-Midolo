@@ -6,9 +6,32 @@
     justify-content: space-around;
     margin-top:50px;
     margin-bottom:100px;
+    @media (max-width:375px) {
+        flex-direction:column;
+        flex-wrap:wrap;
+        align-items:center;
+    }
+    @media (max-width:1140px) {
+        flex-direction:row;
+        flex-wrap:wrap;
+        align-items:center;
+    }
+}
+
+.marca{
     > img {
         height:100px;
     }
+    @media(max-width:375px) {
+        gap:40px;
+        width:50%;
+        flex-wrap:nowrap;
+        > img {
+            width:100%;
+            height:auto;
+        }
+    }
+
 }
 
 .tituloMarcas {
