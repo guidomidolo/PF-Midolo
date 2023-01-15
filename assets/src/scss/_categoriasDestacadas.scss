@@ -27,7 +27,14 @@
     @media(max-width:960px) {
         flex-direction:row;
         align-items:center;
-        gap:10px;
+        gap:20px;
+        width:100%;
+        flex-wrap:wrap;
+    }
+    @media(max-width:1200px) {
+        flex-direction:row;
+        align-items:center;
+        gap:20px;
         width:100%;
         flex-wrap:wrap;
     }
