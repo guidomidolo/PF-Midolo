@@ -11,43 +11,42 @@
 }
 
 /*PRODUCTO*/
-.categoriaProductoIndividual {
-    border: 1px solid #222; 
-    margin: 20px; 
-    border-radius: 5px;
-    border-style: none;
-    display: flex;
-    width:50%;
-    height: auto;
-    overflow:hidden;
-    -webkit-box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.32); 
-    box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.08);
-    @media (max-width:500px){
-            width:100%;
-        }
-}
-
 .productoIndividual {
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     gap:50px;
     padding-left:20px;
     padding-right:20px;
     margin-top:50px;
-    @media(max-width:500px){
-            flex-direction:column;
-            flex-wrap: wrap;
-        }
+    @media(min-width:768px){
+        flex-direction:row;
+    } 
+}
+
+.categoriaProductoIndividual {
+    border: 1px solid #222; 
+    border-radius: 5px;
+    border-style: none;
+    display: flex;
+    width:100%;
+    height: auto;
+    -webkit-box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.32); 
+    box-shadow: 1px 5px 10px 3px rgba(0,0,0,0.08);
+    @media(min-width:768px){
+        width:50%;
+    }
 }
 
 .imagenProductoIndividual {
     width:100%;
+    height:auto;
 }
 .tituloProductoIndividual {
     font-size:25px;
 }
 .textoProductoIndividual{
     line-height:25px;
+    text-align:justify;
 }
 .precioProductoIndividual {
     font-size:50px;
@@ -61,20 +60,19 @@
     flex-direction: column;
     border: 1px solid #222; 
     padding: 20px;
-    margin: 20px; 
     border-radius: 5px;
     border-style: none;
-    width:50%;
+    width:100%;
     height:auto;
     justify-content:space-evenly;
+    @media(min-width:768px){
+        width:50%;
+    } 
     > h2{
         font-size:40px;
         margin-bottom:20px;
+
     }
-    @media (max-width: 500px){
-            width:100%;
-    
-        }
 }
 
 /*PROD RELACIONADOS*/
