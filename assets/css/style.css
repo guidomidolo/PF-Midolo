@@ -575,6 +575,53 @@ footer {
   gap: 10px;
 }
 
+.headerNosotros > h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.infoNosotros {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+.infoNosotros > .imagenNosotros {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+@media (min-width: 768px) {
+  .infoNosotros > .imagenNosotros {
+    width: 50%;
+  }
+}
+.infoNosotros > .imagenNosotros > .imgSkater {
+  width: 90%;
+}
+@media (min-width: 768px) {
+  .infoNosotros > .imagenNosotros > .imgSkater {
+    object-fit: cover;
+  }
+}
+.infoNosotros > .infoDeProducto {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  .infoNosotros > .infoDeProducto {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .infoNosotros {
+    flex-direction: row;
+  }
+}
+
 body {
   font-family: "Poppins", sans-serif;
   display: grid;
