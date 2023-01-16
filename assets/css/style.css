@@ -48,6 +48,22 @@
   font-weight: 300;
 }
 
+.agregarAlCarrito {
+  background-color: #000;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: #000;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  font-weight: 700;
+}
+.agregarAlCarrito:hover {
+  background-color: #222;
+}
+
 .nav-link {
   color: #fff;
 }
@@ -276,22 +292,6 @@ nav > ul > li > ul a {
   color: #c10000;
   font-weight: 700;
   margin-top: 10px;
-}
-
-.agregarAlCarrito {
-  background-color: #000;
-  color: #fff;
-  font-size: 15px;
-  padding: 10px;
-  border-radius: 5px;
-  border-color: #000;
-  margin-top: 10px;
-  display: block;
-  width: 100%;
-  font-weight: 700;
-}
-.agregarAlCarrito:hover {
-  background-color: #222;
 }
 
 .tituloCategoria {
