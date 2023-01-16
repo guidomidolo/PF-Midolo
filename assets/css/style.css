@@ -56,6 +56,7 @@ nav {
   display: grid;
   grid-area: nav;
   background-color: rgba(34, 34, 34, 0.924);
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   align-items: center;
@@ -64,7 +65,8 @@ nav {
 nav > img {
   width: auto;
   height: 80px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   grid-column: 1/1;
   justify-self: center;
   align-self: center;
@@ -249,12 +251,10 @@ nav > ul > li > ul a {
   border-style: none;
   width: 300px;
   overflow: hidden;
-  -webkit-box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.32);
   box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
 }
 .producto:hover {
-  -webkit-box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.9);
   box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.25);
   transition: 0.6s;
 }
@@ -503,7 +503,6 @@ footer {
   display: flex;
   width: 100%;
   height: auto;
-  -webkit-box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.32);
   box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.08);
 }
 @media (min-width: 768px) {
@@ -587,6 +586,11 @@ footer {
   width: 100%;
   gap: 10px;
 }
+@media (min-width: 768px) {
+  .infoNosotros {
+    flex-direction: row;
+  }
+}
 .infoNosotros > .imagenNosotros {
   width: 100%;
   justify-content: center;
@@ -602,7 +606,8 @@ footer {
 }
 @media (min-width: 768px) {
   .infoNosotros > .imagenNosotros > .imgSkater {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .infoNosotros > .infoDeProducto {
@@ -610,15 +615,49 @@ footer {
   flex-direction: column;
   padding: 10px;
   text-align: justify;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .infoNosotros > .infoDeProducto {
     width: 50%;
   }
 }
+.infoNosotros > .infoDeProducto > .tituloProducto {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.infoNosotros > .infoDeProducto > .textoProducto {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.tituloProductosRelacionados > h2 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
 @media (min-width: 768px) {
-  .infoNosotros {
+  .tituloProductosRelacionados > h2 {
+    margin-top: 60px;
+  }
+}
+
+.gridGaleria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .gridGaleria {
     flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  .gridGaleria > .tarjetaGaleria {
+    width: 100%;
   }
 }
 
@@ -650,7 +689,8 @@ main {
   margin-top: 50px;
   display: flex;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   justify-content: center;
 }
 @media (max-width: 1300px) {
@@ -675,7 +715,6 @@ main {
   display: inline-block;
   width: 300px;
   overflow: hidden;
-  -webkit-box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.32);
   box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.08);
 }
 
@@ -788,4 +827,4 @@ main {
 
 .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
   color: white;
-}
+}/*# sourceMappingURL=style.css.map */
