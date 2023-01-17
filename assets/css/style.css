@@ -51,11 +51,23 @@
 .nav-link {
   color: #fff;
 }
+.nav-link:hover {
+  color: #eaeaea;
+}
+
+.colorHamburguesa {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: #222;
+}
 
 nav {
   display: grid;
   grid-area: nav;
   background-color: rgba(34, 34, 34, 0.924);
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   align-items: center;
@@ -64,7 +76,8 @@ nav {
 nav > img {
   width: auto;
   height: 80px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   grid-column: 1/1;
   justify-self: center;
   align-self: center;
@@ -168,7 +181,7 @@ nav > ul > li > ul a {
 @media (max-width: 575px) {
   .tituloCategoriaDestacada {
     align-items: center;
-    justify-content: center;
+    justify-content: left;
   }
   .tituloCategoriaDestacada h3 {
     font-size: 60px;
@@ -190,7 +203,7 @@ nav > ul > li > ul a {
 @media (max-width: 575px) {
   .tituloCategoriaDestacada2 {
     align-items: center;
-    justify-content: center;
+    justify-content: right;
   }
   .tituloCategoriaDestacada2 h3 {
     font-size: 60px;
@@ -266,12 +279,10 @@ nav > ul > li > ul a {
   border-style: none;
   width: 300px;
   overflow: hidden;
-  -webkit-box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.32);
   box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
 }
 .producto:hover {
-  -webkit-box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.9);
   box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.25);
   transition: 0.6s;
 }
@@ -520,7 +531,6 @@ footer {
   display: flex;
   width: 100%;
   height: auto;
-  -webkit-box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.32);
   box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.08);
 }
 @media (min-width: 768px) {
@@ -641,7 +651,8 @@ footer {
 }
 @media (min-width: 768px) {
   .infoNosotros > .imagenNosotros > .imgSkater {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .infoNosotros > .infoDeProducto {
@@ -697,7 +708,8 @@ footer {
 .gridGaleria > .fotoGaleria {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .headerContacto > h1 {
@@ -835,26 +847,14 @@ main {
   margin-top: 50px;
   display: flex;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   justify-content: center;
 }
 @media (max-width: 1300px) {
   .bannerPubli {
     display: none;
   }
-}
-
-/*CSS NOSOTROS*/
-.tituloRelacionados {
-  display: inline-block;
-  margin-top: 50px;
-  width: 100%;
-}
-.tituloRelacionados > h2 {
-  position: relative;
-  display: inline-block;
-  left: 40%;
-  font-size: 30px;
 }
 
 /*CSS PAGINAS CON BOOTSTRAP*/
@@ -897,4 +897,4 @@ main {
 
 .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
   color: white;
-}
+}/*# sourceMappingURL=style.css.map */
