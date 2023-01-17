@@ -63,6 +63,14 @@
   background-color: #222;
 }
 
+.dropdown-item {
+  color: #fff;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+  color: white;
+}
+
 nav {
   display: grid;
   grid-area: nav;
@@ -378,7 +386,7 @@ nav > ul > li > ul a {
 .categoriaDestacada1 > h2 {
   position: absolute;
   top: 40%;
-  left: 25%;
+  left: 18%;
   color: #fff;
 }
 
@@ -590,6 +598,11 @@ footer {
   flex-direction: row;
   justify-content: center;
   font-size: 30px;
+}
+@media (max-width: 768px) {
+  .tituloDestacados > h2 {
+    font-size: 25px;
+  }
 }
 
 .productosDestacados {
@@ -890,11 +903,4 @@ main {
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     background-color: #222222;
   }
-}
-.dropdown-item {
-  color: #fff;
-}
-
-.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
-  color: white;
 }/*# sourceMappingURL=style.css.map */
