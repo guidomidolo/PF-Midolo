@@ -767,6 +767,7 @@ footer {
 .formContacto {
   width: 100%;
   display: flex;
+  flex-direction: column;
   margin: 20px 20px 80px 20px;
 }
 @media (min-width: 768px) {
@@ -789,49 +790,31 @@ footer {
   background-color: #c10000 !important;
 }
 
-/*CSS CONTACTO
-.contacto{
-    display:block;
-    margin-top:50px;
-    margin-bottom:50px;
+.enviarMensaje {
+  background-color: #000;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: #000;
+  margin-top: 10px;
+  width: 100%;
+  font-weight: 700;
 }
-.infoContacto{
-    margin:20px;
-    width:650px;
-    display:inline-block;
-    margin-right:20px;
-    > h2 {
-        margin-bottom:30px;
-    }   
-}
-
-.formContacto{
-    width:650px;
-    display:inline-block;
-    margin:20px 20px 80px 20px;
+.enviarMensaje:hover {
+  background-color: #222;
 }
 
-.datosContacto{
-    margin:20px;
+.enviarMensaje {
+  width: 100%;
+  background-color: #222;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.enviarMensaje:hover {
+  background-color: #000;
 }
 
-.enviarMensaje{
-    background-color:#000;
-    color:#fff;
-    font-size:15px;
-    padding:10px;
-    border-radius:5px;
-    border-color:#000;
-    margin-top:10px;
-    display:block;
-    width: 100%;
-    font-weight:700;
-    &:hover {
-        background-color:#222;
-    }
-}
-
-*/
 body {
   font-family: "Poppins", sans-serif;
   display: grid;
