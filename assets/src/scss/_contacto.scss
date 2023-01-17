@@ -1,0 +1,102 @@
+.headerContacto {
+    > h1 {
+        margin-top:30px;
+        margin-bottom:30px;
+        margin-left:30px;
+    }
+}
+
+.infoContacto {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    width:100%;
+    gap:10px;
+    @media(min-width:768px){
+        flex-direction:row;
+    }
+    > .datosContacto {
+        display:flex;
+        flex-direction:column;
+        padding:10px;
+        text-align:justify;
+        width:100%;
+        @media(min-width:768px){
+            width:50%;
+        }
+        > .textoContacto {
+            width:100%;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        > .redesSociales{
+            line-height:50px;
+        }
+    
+}
+}
+
+.formContacto{
+    width:100%;
+    display:flex;
+    margin:20px 20px 80px 20px;
+    @media(min-width:768px){
+        margin:0px;
+        width:20%;
+    }
+}
+.casilleros {
+    width:90%;
+    border:none;
+    border-bottom:1px solid #222;
+    margin-bottom:10px;
+}
+.textarea {
+    border:1px solid #222;
+    width:100%;
+    background-color:#c10000 !important;
+}
+
+/*CSS CONTACTO
+.contacto{
+    display:block;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.infoContacto{
+    margin:20px;
+    width:650px;
+    display:inline-block;
+    margin-right:20px;
+    > h2 {
+        margin-bottom:30px;
+    }   
+}
+
+.formContacto{
+    width:650px;
+    display:inline-block;
+    margin:20px 20px 80px 20px;
+}
+
+.datosContacto{
+    margin:20px;
+}
+
+.enviarMensaje{
+    background-color:#000;
+    color:#fff;
+    font-size:15px;
+    padding:10px;
+    border-radius:5px;
+    border-color:#000;
+    margin-top:10px;
+    display:block;
+    width: 100%;
+    font-weight:700;
+    &:hover {
+        background-color:#222;
+    }
+}
+
+*/

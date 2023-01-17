@@ -59,17 +59,23 @@
     }
 
 .gridGaleria {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    display: grid;
+    margin: 10px;
+    margin-bottom:30px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,auto);
     gap:20px;
-    flex-wrap:wrap;
-    @media(min-width:768px){
-        flex-direction:row;
+    padding-right: 10px;
+    padding-left:10px;
+    @media(max-width:768px){
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,auto); 
+        gap:10px;
     }
-    > .tarjetaGaleria {
-        @media(min-width:768px) {
-            width:100%;
-        }
+    > .fotoGaleria {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
+

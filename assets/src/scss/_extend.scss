@@ -39,22 +39,5 @@
     }
 }
 
-%addToCart {
-    background-color:$bgAddToCart;
-    color:$textAddToCart;
-    font-size:15px;
-    padding:10px;
-    border-radius:5px;
-    border-color:$borderAddToCart;
-    margin-top:10px;
-    display:block;
-    width: 100%;
-    font-weight:700;
-    &:hover {
-        background-color:#222;
-    }
-}
 
-@mixin addToCart($bgAddToCart, $borderAddToCart,$textAddToCart){
-    
-}
+

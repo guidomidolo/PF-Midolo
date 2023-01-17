@@ -48,22 +48,6 @@
   font-weight: 300;
 }
 
-.agregarAlCarrito {
-  background-color: #000;
-  color: #fff;
-  font-size: 15px;
-  padding: 10px;
-  border-radius: 5px;
-  border-color: #000;
-  margin-top: 10px;
-  display: block;
-  width: 100%;
-  font-weight: 700;
-}
-.agregarAlCarrito:hover {
-  background-color: #222;
-}
-
 .nav-link {
   color: #fff;
 }
@@ -72,7 +56,6 @@ nav {
   display: grid;
   grid-area: nav;
   background-color: rgba(34, 34, 34, 0.924);
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   align-items: center;
@@ -81,8 +64,7 @@ nav {
 nav > img {
   width: auto;
   height: 80px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   grid-column: 1/1;
   justify-self: center;
   align-self: center;
@@ -258,6 +240,23 @@ nav > ul > li > ul a {
     margin-top: 20px;
   }
 }
+.productos2 > .producto > .agregarAlCarrito {
+  background-color: #eaeaea;
+  color: #000;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: #eaeaea;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  font-weight: 700;
+}
+.productos2 > .producto > .agregarAlCarrito:hover {
+  background-color: #920303;
+  color: #fff;
+  border: #920303;
+}
 
 .producto {
   border: 1px solid #222;
@@ -267,10 +266,12 @@ nav > ul > li > ul a {
   border-style: none;
   width: 300px;
   overflow: hidden;
+  -webkit-box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.32);
   box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
 }
 .producto:hover {
+  -webkit-box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.9);
   box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.25);
   transition: 0.6s;
 }
@@ -289,9 +290,25 @@ nav > ul > li > ul a {
 
 .precioProducto {
   font-size: 25px;
-  color: #c10000;
+  color: #920303;
   font-weight: 700;
   margin-top: 10px;
+}
+
+.agregarAlCarrito {
+  background-color: #000;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: #000;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  font-weight: 700;
+}
+.agregarAlCarrito:hover {
+  background-color: #222;
 }
 
 .tituloCategoria {
@@ -503,6 +520,7 @@ footer {
   display: flex;
   width: 100%;
   height: auto;
+  -webkit-box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.32);
   box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.08);
 }
 @media (min-width: 768px) {
@@ -527,7 +545,7 @@ footer {
 
 .precioProductoIndividual {
   font-size: 50px;
-  color: #c10000;
+  color: #920303;
   font-weight: 700;
   margin-top: 10px;
 }
@@ -573,6 +591,23 @@ footer {
   margin-bottom: 100px;
   gap: 10px;
 }
+.productosDestacados > .producto > .agregarAlCarrito {
+  background-color: #eaeaea;
+  color: #000;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: #eaeaea;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  font-weight: 700;
+}
+.productosDestacados > .producto > .agregarAlCarrito:hover {
+  background-color: #920303;
+  color: #fff;
+  border: #920303;
+}
 
 .headerNosotros > h1 {
   margin-top: 30px;
@@ -606,8 +641,7 @@ footer {
 }
 @media (min-width: 768px) {
   .infoNosotros > .imagenNosotros > .imgSkater {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 .infoNosotros > .infoDeProducto {
@@ -644,23 +678,135 @@ footer {
 }
 
 .gridGaleria {
+  display: grid;
+  margin: 10px;
+  margin-bottom: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+@media (max-width: 768px) {
+  .gridGaleria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+  }
+}
+.gridGaleria > .fotoGaleria {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.headerContacto > h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.infoContacto {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
   flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
 }
 @media (min-width: 768px) {
-  .gridGaleria {
+  .infoContacto {
     flex-direction: row;
   }
 }
+.infoContacto > .datosContacto {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: justify;
+  width: 100%;
+}
 @media (min-width: 768px) {
-  .gridGaleria > .tarjetaGaleria {
-    width: 100%;
+  .infoContacto > .datosContacto {
+    width: 50%;
+  }
+}
+.infoContacto > .datosContacto > .textoContacto {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.infoContacto > .datosContacto > .redesSociales {
+  line-height: 50px;
+}
+
+.formContacto {
+  width: 100%;
+  display: flex;
+  margin: 20px 20px 80px 20px;
+}
+@media (min-width: 768px) {
+  .formContacto {
+    margin: 0px;
+    width: 20%;
   }
 }
 
+.casilleros {
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid #222;
+  margin-bottom: 10px;
+}
+
+.textarea  {
+  border: 1px solid #222;
+  width: 100%;
+  background-color: #c10000 !important;
+}
+
+/*CSS CONTACTO
+.contacto{
+    display:block;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.infoContacto{
+    margin:20px;
+    width:650px;
+    display:inline-block;
+    margin-right:20px;
+    > h2 {
+        margin-bottom:30px;
+    }   
+}
+
+.formContacto{
+    width:650px;
+    display:inline-block;
+    margin:20px 20px 80px 20px;
+}
+
+.datosContacto{
+    margin:20px;
+}
+
+.enviarMensaje{
+    background-color:#000;
+    color:#fff;
+    font-size:15px;
+    padding:10px;
+    border-radius:5px;
+    border-color:#000;
+    margin-top:10px;
+    display:block;
+    width: 100%;
+    font-weight:700;
+    &:hover {
+        background-color:#222;
+    }
+}
+
+*/
 body {
   font-family: "Poppins", sans-serif;
   display: grid;
@@ -689,8 +835,7 @@ main {
   margin-top: 50px;
   display: flex;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   justify-content: center;
 }
 @media (max-width: 1300px) {
@@ -700,24 +845,6 @@ main {
 }
 
 /*CSS NOSOTROS*/
-.imgNosotros {
-  width: 800px;
-  display: inline-block;
-  max-height: 500px;
-  overflow: hidden;
-}
-
-.galeria {
-  padding: 20px;
-  margin: 20px;
-  border-radius: 5px;
-  border-style: none;
-  display: inline-block;
-  width: 300px;
-  overflow: hidden;
-  box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.08);
-}
-
 .tituloRelacionados {
   display: inline-block;
   margin-top: 50px;
@@ -728,63 +855,6 @@ main {
   display: inline-block;
   left: 40%;
   font-size: 30px;
-}
-
-/*CSS CONTACTO*/
-.contacto {
-  display: block;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.infoContacto {
-  margin: 20px;
-  width: 650px;
-  display: inline-block;
-  margin-right: 20px;
-}
-.infoContacto > h2 {
-  margin-bottom: 30px;
-}
-
-.formContacto {
-  width: 650px;
-  display: inline-block;
-  margin: 20px 20px 80px 20px;
-}
-
-.datosContacto {
-  margin: 20px;
-}
-
-.enviarMensaje {
-  background-color: #000;
-  color: #fff;
-  font-size: 15px;
-  padding: 10px;
-  border-radius: 5px;
-  border-color: #000;
-  margin-top: 10px;
-  display: block;
-  width: 100%;
-  font-weight: 700;
-}
-.enviarMensaje:hover {
-  background-color: #222;
-}
-
-.casilleros {
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #222;
-  margin: 5px;
-  margin-bottom: 10px;
-}
-
-.textarea  {
-  border: 1px solid #222;
-  max-width: 100vw !important;
-  width: auto;
 }
 
 /*CSS PAGINAS CON BOOTSTRAP*/
@@ -827,4 +897,4 @@ main {
 
 .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
   color: white;
-}/*# sourceMappingURL=style.css.map */
+}

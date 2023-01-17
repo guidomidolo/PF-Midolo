@@ -1,0 +1,17 @@
+@mixin addToCart($background, $color, $border, $background-hover, $color-hover, $border-hover){
+    background-color:$background;
+    color:$color;
+    font-size:15px;
+    padding:10px;
+    border-radius:5px;
+    border-color:$border;
+    margin-top:10px;
+    display:block;
+    width: 100%;
+    font-weight:700;
+    &:hover {
+        background-color:$background-hover;
+        color:$color-hover;
+        border:$border-hover;
+}
+}
