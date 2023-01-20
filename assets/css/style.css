@@ -604,10 +604,6 @@ footer .columnaFooterBS > ul > li > a {
   color: inherit;
 }
 
-.container {
-  max-width: 100vw;
-}
-
 /*BANNER*/
 .bannerProductoIndividualVans {
   background-image: url(../img/bannerProductoVans.jpg);
