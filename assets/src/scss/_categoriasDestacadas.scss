@@ -44,6 +44,7 @@
     @extend %categoriaDestacada;
     background-image:url(../img/panchas.jpg);
     @extend %zoomInOut;
+    margin: 10px;
     > h2{
         position:absolute;
         top:50%;
@@ -59,13 +60,14 @@
     @extend %categoriaDestacada;
     background-image:url(../img/joggers.jpg);
     @extend %zoomInOut;
-    text-shadow: $textShadow;
+    margin: 10px;
     > h2{
         position:absolute;
         top:50%;
         left:50%;
         transform: translate(-50%, -50%);
         color:#fff;
+        text-shadow: $textShadow;
     }
 }
 
@@ -73,13 +75,14 @@
     @extend %categoriaDestacada;
     background-image:url(../img/hoodies.jpg);
     @extend %zoomInOut;
-    text-shadow: $textShadow;
+    margin: 10px;
     > h2 {
         position:absolute;
         top:50%;
         left:50%;
         color:#fff;
         transform: translate(-50%, -50%);
+        text-shadow: $textShadow;
     }
 
 
@@ -88,13 +91,14 @@
     @extend %categoriaDestacada;
     background-image:url(../img/anoraks.jpg);
     @extend %zoomInOut;
-    text-shadow: $textShadow;
+    margin: 10px;
     > h2 {
         position:absolute;
         top:50%;
         left:50%;
         transform: translate(-50%, -50%);
         color:#fff;
+        text-shadow: $textShadow;
     }
 
 }
