@@ -871,6 +871,8 @@ footer .columnaFooterBS > ul > li > a {
 
 .contactForm {
   width: 100%;
+  padding-left: 1rem !important;
+  padding-right: 0;
 }
 @media (min-width: 768px) {
   .contactForm {
