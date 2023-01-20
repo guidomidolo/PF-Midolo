@@ -43,11 +43,14 @@
 .categoriaDestacada1{
     @extend %categoriaDestacada;
     background-image:url(../img/panchas.jpg);
+    @extend %zoomInOut;
     > h2{
         position:absolute;
-        top:40%;
-        left:18%;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
         color:#fff;
+        text-shadow: $textShadow;
         
     }
 
@@ -55,28 +58,28 @@
 .categoriaDestacada2{
     @extend %categoriaDestacada;
     background-image:url(../img/joggers.jpg);
+    @extend %zoomInOut;
+    text-shadow: $textShadow;
     > h2{
         position:absolute;
-        top:40%;
-        left:25%;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
         color:#fff;
-        @media(max-width:575px) {
-            left:30%;
-        }
     }
 }
 
 .categoriaDestacada3{
     @extend %categoriaDestacada;
     background-image:url(../img/hoodies.jpg);
+    @extend %zoomInOut;
+    text-shadow: $textShadow;
     > h2 {
         position:absolute;
-        top:40%;
-        left:25%;
+        top:50%;
+        left:50%;
         color:#fff;
-        @media(max-width:575px) {
-            left:30%;
-        }
+        transform: translate(-50%, -50%);
     }
 
 
@@ -84,14 +87,14 @@
 .categoriaDestacada4{
     @extend %categoriaDestacada;
     background-image:url(../img/anoraks.jpg);
+    @extend %zoomInOut;
+    text-shadow: $textShadow;
     > h2 {
         position:absolute;
-        top:40%;
-        left:25%;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
         color:#fff;
-        @media(max-width:575px) {
-            left:30%;
-        }
     }
 
 }

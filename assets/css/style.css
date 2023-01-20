@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +15,9 @@
   background-position: bottom;
   background-size: cover;
 }
+.categoriaDestacada4 > h2, .categoriaDestacada3 > h2, .categoriaDestacada2 > h2, .categoriaDestacada1 > h2 {
+  font-size: 30px;
+}
 
 .bannerProductoIndividualVolcom, .bannerProductoIndividualVans {
   height: 300px;
@@ -23,29 +25,90 @@
   position: relative;
   z-index: -1;
   background-position: left;
+  margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .bannerProductoIndividualVolcom, .bannerProductoIndividualVans {
+    height: 200px;
+  }
 }
 .bannerProductoIndividualVolcom > h1, .bannerProductoIndividualVans > h1 {
   color: #fff;
   font-size: 60px;
   font-weight: 700;
   position: absolute;
-  top: 22%;
-  left: 10%;
+  top: 45%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px 2px #222;
 }
 @media (max-width: 500px) {
   .bannerProductoIndividualVolcom > h1, .bannerProductoIndividualVans > h1 {
-    font-size: 45px;
-    top: 30%;
-    left: 10%;
+    font-size: 40px;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 100%;
   }
 }
 .bannerProductoIndividualVolcom > h3, .bannerProductoIndividualVans > h3 {
   color: #fff;
   font-size: 18px;
   position: absolute;
-  left: 10%;
-  top: 55%;
+  left: 17%;
+  top: 60%;
+  transform: translate(-50%, -50%);
   font-weight: 300;
+  text-shadow: 1px 1px 2px #222;
+}
+@media (max-width: 500px) {
+  .bannerProductoIndividualVolcom > h3, .bannerProductoIndividualVans > h3 {
+    font-size: 15px;
+    top: 58%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+}
+
+.bannerSeccionNosotros, .bannerSeccionContacto {
+  height: 300px;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  background-position: left;
+  margin-bottom: 40px;
+}
+@media (max-width: 992px) {
+  .bannerSeccionNosotros, .bannerSeccionContacto {
+    height: 200px;
+  }
+}
+.bannerSeccionNosotros > h1, .bannerSeccionContacto > h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  text-shadow: 1px 1px 2px #222;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 992px) {
+  .bannerSeccionNosotros > h1, .bannerSeccionContacto > h1 {
+    font-size: 40px;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.categoriaDestacada4, .categoriaDestacada3, .categoriaDestacada2, .categoriaDestacada1 {
+  transition: 0.15s;
+}
+.categoriaDestacada4:hover, .categoriaDestacada3:hover, .categoriaDestacada2:hover, .categoriaDestacada1:hover {
+  scale: 1.02;
+  transition: 0.15s;
 }
 
 .nav-link {
@@ -75,7 +138,6 @@ nav {
   display: grid;
   grid-area: nav;
   background-color: rgba(34, 34, 34, 0.924);
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   align-items: center;
@@ -84,8 +146,7 @@ nav {
 nav > img {
   width: auto;
   height: 80px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   grid-column: 1/1;
   justify-self: center;
   align-self: center;
@@ -131,9 +192,8 @@ nav > ul > li > ul a {
 }
 
 .bannerHome {
-  background-image: url(../img/bannerHomeVans.jpg);
+  background-color: rgba(34, 34, 34, 0.151);
   height: 500px;
-  background-size: cover;
   position: relative;
 }
 .bannerHome > h1 {
@@ -143,6 +203,7 @@ nav > ul > li > ul a {
   position: absolute;
   top: 27%;
   left: 10%;
+  text-shadow: 1px 1px 2px #222;
 }
 @media (max-width: 575px) {
   .bannerHome > h1 {
@@ -158,6 +219,7 @@ nav > ul > li > ul a {
   top: 45%;
   left: 10%;
   letter-spacing: 5px;
+  text-shadow: 1px 1px 2px #222;
 }
 @media (max-width: 575px) {
   .bannerHome > h2 {
@@ -171,11 +233,25 @@ nav > ul > li > ul a {
   left: 10%;
   top: 55%;
   font-weight: 300;
+  text-shadow: 1px 1px 2px #222;
 }
 @media (max-width: 575px) {
   .bannerHome > h3 {
     top: 60%;
   }
+}
+
+.overlayHome {
+  background-image: url(../img/bannerHomeVans.jpg);
+  background-size: cover;
+}
+
+.bannerSeccionContacto {
+  background-image: url(../img/bannerContacto.jpg);
+}
+
+.bannerSeccionNosotros {
+  background-image: url(../img/bannerNosotros.jpg);
 }
 
 .tituloCategoriaDestacada {
@@ -287,10 +363,12 @@ nav > ul > li > ul a {
   border-style: none;
   width: 300px;
   overflow: hidden;
+  -webkit-box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.32);
   box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
 }
 .producto:hover {
+  -webkit-box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.9);
   box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.25);
   transition: 0.6s;
 }
@@ -301,6 +379,8 @@ nav > ul > li > ul a {
 
 .tituloProducto {
   font-size: 25px;
+  margin-top: 20px;
+  font-weight: 700;
 }
 
 .textoProducto {
@@ -385,54 +465,47 @@ nav > ul > li > ul a {
 }
 .categoriaDestacada1 > h2 {
   position: absolute;
-  top: 40%;
-  left: 18%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #fff;
+  text-shadow: 1px 1px 2px #222;
 }
 
 .categoriaDestacada2 {
   background-image: url(../img/joggers.jpg);
+  text-shadow: 1px 1px 2px #222;
 }
 .categoriaDestacada2 > h2 {
   position: absolute;
-  top: 40%;
-  left: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #fff;
-}
-@media (max-width: 575px) {
-  .categoriaDestacada2 > h2 {
-    left: 30%;
-  }
 }
 
 .categoriaDestacada3 {
   background-image: url(../img/hoodies.jpg);
+  text-shadow: 1px 1px 2px #222;
 }
 .categoriaDestacada3 > h2 {
   position: absolute;
-  top: 40%;
-  left: 25%;
+  top: 50%;
+  left: 50%;
   color: #fff;
-}
-@media (max-width: 575px) {
-  .categoriaDestacada3 > h2 {
-    left: 30%;
-  }
+  transform: translate(-50%, -50%);
 }
 
 .categoriaDestacada4 {
   background-image: url(../img/anoraks.jpg);
+  text-shadow: 1px 1px 2px #222;
 }
 .categoriaDestacada4 > h2 {
   position: absolute;
-  top: 40%;
-  left: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #fff;
-}
-@media (max-width: 575px) {
-  .categoriaDestacada4 > h2 {
-    left: 30%;
-  }
 }
 
 .marcas {
@@ -488,24 +561,21 @@ footer {
   grid-area: footer;
   background-color: #222;
   color: #fff;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-evenly;
-  align-items: center;
 }
-@media (max-width: 500px) {
-  footer {
-    flex-direction: column;
-    width: 100%;
-  }
+footer .columnaFooterBS > ul > li {
+  list-style-type: none;
+}
+footer .columnaFooterBS > ul > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+footer .titulosFooter {
+  font-size: 20px;
+  font-weight: 800;
 }
 
-.columnaFooter > img {
-  justify-content: center;
-}
-.columnaFooter > ul {
-  list-style-type: none;
+.container {
+  max-width: 100vw;
 }
 
 /*BANNER*/
@@ -539,6 +609,7 @@ footer {
   display: flex;
   width: 100%;
   height: auto;
+  -webkit-box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.32);
   box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.08);
 }
 @media (min-width: 768px) {
@@ -664,30 +735,30 @@ footer {
 }
 @media (min-width: 768px) {
   .infoNosotros > .imagenNosotros > .imgSkater {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
-.infoNosotros > .infoDeProducto {
+.infoNosotros > .infoNosotros {
   display: flex;
   flex-direction: column;
   padding: 10px;
   text-align: justify;
   width: 100%;
+  justify-content: space-evenly;
 }
 @media (min-width: 768px) {
-  .infoNosotros > .infoDeProducto {
+  .infoNosotros > .infoNosotros {
     width: 50%;
   }
 }
-.infoNosotros > .infoDeProducto > .tituloProducto {
+.infoNosotros > .infoNosotros > .tituloNosotros {
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
-.infoNosotros > .infoDeProducto > .textoProducto {
-  padding-right: 20px;
-  padding-left: 20px;
+.infoNosotros > .infoNosotros > .textoNosotros {
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .tituloProductosRelacionados > h2 {
@@ -721,8 +792,7 @@ footer {
 .gridGaleria > .fotoGaleria {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .headerContacto > h1 {
@@ -764,45 +834,13 @@ footer {
   line-height: 50px;
 }
 
-.formContacto {
+.contactForm {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 20px 20px 80px 20px;
 }
 @media (min-width: 768px) {
-  .formContacto {
-    margin: 0px;
-    width: 20%;
+  .contactForm {
+    width: 50%;
   }
-}
-
-.casilleros {
-  width: 90%;
-  border: none;
-  border-bottom: 1px solid #222;
-  margin-bottom: 10px;
-}
-
-.textarea  {
-  border: 1px solid #222;
-  width: 100%;
-  background-color: #c10000 !important;
-}
-
-.enviarMensaje {
-  background-color: #000;
-  color: #fff;
-  font-size: 15px;
-  padding: 10px;
-  border-radius: 5px;
-  border-color: #000;
-  margin-top: 10px;
-  width: 100%;
-  font-weight: 700;
-}
-.enviarMensaje:hover {
-  background-color: #222;
 }
 
 .enviarMensaje {
@@ -843,8 +881,7 @@ main {
   margin-top: 50px;
   display: flex;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   justify-content: center;
 }
 @media (max-width: 1300px) {
@@ -886,4 +923,4 @@ main {
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     background-color: #222222;
   }
-}/*# sourceMappingURL=style.css.map */
+}

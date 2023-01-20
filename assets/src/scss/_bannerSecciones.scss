@@ -1,0 +1,9 @@
+.bannerSeccionContacto {
+    @extend %bannerSecciones;
+    background-image: url(../img/bannerContacto.jpg);
+}
+
+.bannerSeccionNosotros {
+    @extend %bannerSecciones;
+    background-image: url(../img/bannerNosotros.jpg);
+}

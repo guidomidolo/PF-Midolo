@@ -1,7 +1,6 @@
 .bannerHome{
-    background-image: url(../img/bannerHomeVans.jpg);
+    background-color:rgba(34, 34, 34, 0.151);
     height:500px;
-    background-size:cover;
     position:relative;
     > h1 {
         color:#fff;
@@ -10,7 +9,7 @@
         position:absolute;
         top:27%;
         left:10%;
-
+        text-shadow: $textShadow;
         @media(max-width:575px) {
             top:25%;
             line-height:60px;
@@ -24,6 +23,7 @@
         top: 45%;
         left:10%;
         letter-spacing: 5px;
+        text-shadow: $textShadow;
         @media(max-width:575px) {
             top:52%;
         }
@@ -35,8 +35,14 @@
         left:10%;
         top:55%;
         font-weight:300;
+        text-shadow: $textShadow;
         @media(max-width:575px) {
             top:60%;
         }
     }
+}
+
+.overlayHome {
+    background-image: url(../img/bannerHomeVans.jpg);
+    background-size:cover;
 }
