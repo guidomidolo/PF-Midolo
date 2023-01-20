@@ -60,3 +60,23 @@ nav {
         }
     }
 }
+
+.navbar>.container-fluid {
+    background-color: #222222;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        background-color: #222222;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: end;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        color: #ffffff;
+
+        &:hover {
+            color: $hoverColor;
+        }
+    }
+}

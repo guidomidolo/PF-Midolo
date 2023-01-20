@@ -193,6 +193,24 @@ nav > ul > li > ul a {
   padding: 10px;
 }
 
+.navbar > .container-fluid {
+  background-color: #222222;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    background-color: #222222;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: end;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    color: #ffffff;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #920303;
+  }
+}
 .bannerHome {
   background-color: rgba(34, 34, 34, 0.151);
   height: 500px;
@@ -562,6 +580,10 @@ footer {
   background-color: #222;
   color: #fff;
 }
+footer .columnaFooterBS > .titulosFooter {
+  font-size: 20px;
+  font-weight: 800;
+}
 footer .columnaFooterBS > ul {
   padding-left: 0px;
 }
@@ -571,10 +593,6 @@ footer .columnaFooterBS > ul > li {
 footer .columnaFooterBS > ul > li > a {
   text-decoration: none;
   color: inherit;
-}
-footer .columnaFooterBS > ul > .titulosFooter {
-  font-size: 20px;
-  font-weight: 800;
 }
 
 .container {
@@ -902,40 +920,5 @@ main {
 @media (max-width: 1300px) {
   .bannerPubli {
     display: none;
-  }
-}
-
-/*CSS PAGINAS CON BOOTSTRAP*/
-.navbar > .container-fluid {
-  background-color: #222222;
-}
-
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav .nav-link {
-    color: #ffffff;
-  }
-}
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse {
-    justify-content: end;
-  }
-}
-.bg-body-tertiary {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.columnaFooterBS > ul > li {
-  list-style-type: none;
-}
-
-.titulosFooter {
-  font-size: 20px;
-  font-weight: 800;
-}
-
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav .dropdown-menu {
-    background-color: #222222;
   }
 }/*# sourceMappingURL=style.css.map */

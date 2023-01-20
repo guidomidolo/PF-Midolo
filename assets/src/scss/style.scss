@@ -3,7 +3,7 @@
 @import "extend";
 @import "mixin";
 @import "navMobile";
-@import "navViejo";
+@import "navDesktop";
 @import "bannerHome";
 @import "bannerSecciones";
 @import "productosDestacadosHome";
@@ -20,18 +20,19 @@
 body {
     font-family: 'Poppins', sans-serif;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 80px auto auto auto;
     grid-template-areas: "nav    nav    nav    nav"
-                         "header header header header"
-                         "main   main   main   main"
-                         "footer footer footer footer";
+        "header header header header"
+        "main   main   main   main"
+        "footer footer footer footer";
+
     @media(max-width:1320px) {
         grid-template-columns: 100%;
         grid-template-areas: "nav"
-                             "header"
-                             "main"
-                             "footer";
+            "header"
+            "main"
+            "footer";
     }
 }
 
@@ -41,68 +42,19 @@ header {
 
 main {
     grid-area: main;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
 }
 
 
-.bannerPubli{
-    margin-top:50px;
-    display:flex;
-    width:100%;
+.bannerPubli {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
     object-fit: cover;
     justify-content: center;
+
     @media(max-width:1300px) {
-        display:none;
+        display: none;
     }
 }
-
-/*CSS PAGINAS CON BOOTSTRAP*/
-
-.navbar > .container-fluid{
-    background-color:#222222;
-}
-
-@media (min-width: 992px){
-.navbar-expand-lg .navbar-nav .nav-link {
-  color: #ffffff;
-}
-}
-
-@media (min-width: 992px){
-.navbar-expand-lg .navbar-collapse {
-  justify-content: end;
-}
-}
-
-.bg-body-tertiary {
-    padding-top:0;
-    padding-bottom:0;
-}
-
-
-
-.columnaFooterBS > ul > li {
-    list-style-type: none;
-}
-
-.titulosFooter {
-    font-size:20px;
-    font-weight:800;
-}
-
-@media (min-width: 992px){
-.navbar-expand-lg .navbar-nav .dropdown-menu {
-  background-color: #222222;
-}
-
-}
-
-
-
- 
-
-
-
-
-
